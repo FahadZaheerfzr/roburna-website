@@ -55,9 +55,9 @@ export function Whitepaper() {
                 __html: WhitePaperbanner[0].description,
               }}
             />
-            <button onClick={scrollToWhitepaper} className="--btn-1">
+            <a className="--btn-1" href="/roburna-whitepaper.pdf">
               Read Full Whitepaper
-            </button>
+            </a>
           </div>
           {/* <a className='blockchain-scroll' href='#whitepaper'><img src={chev} loading="lazy" /></a> */}
         </section>
