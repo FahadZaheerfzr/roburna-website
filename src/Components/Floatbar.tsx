@@ -8,9 +8,12 @@ import instagram from '../Assets/images/icons/instagram.png'
 import linkedin from '../Assets/images/icons/linkedin.png'
 import m from '../Assets/images/icons/m.png'
 import telegram from '../Assets/images/icons/telegram.png'
-import twitter from '../Assets/images/icons/twitter.png'
 import youtube from '../Assets/images/icons/youtube.png'
 import Draggable from "react-draggable";
+import { FaXTwitter } from "react-icons/fa6";
+import { RiFacebookFill } from "react-icons/ri";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaTiktok } from "react-icons/fa";
 
 export function Floatbar() {
 
@@ -37,7 +40,18 @@ export function Floatbar() {
                             <a target="_blank" href='https://t.me/Roburna' rel="noreferrer"><img src={telegram} height='28px' /></a>
                             <a target="_blank" href='https://discord.com/invite/d8qVn3ca2q' rel="noreferrer"><img src={discord} height='28px' /></a>
                             <a target="_blank" href='https://www.youtube.com/channel/UCO5Fn9KbNmWoB0hQC3xj2iQ' rel="noreferrer"><img src={youtube} height='28px' /></a>
-                            <a target="_blank" href='https://twitter.com/roburnaofficial' rel="noreferrer"><img src={twitter} height='28px' /></a>
+                            <a target="_blank" href='https://twitter.com/roburnaofficial' rel="noreferrer">
+                                < FaXTwitter size={28} className='text-black' />
+                            </a>
+                             <a target="_blank" href="https://www.facebook.com/profile.php?id=61550291123573" rel="noreferrer">
+                                < RiFacebookFill  size={28} className='text-black' />
+                            </a>
+                             <a target="_blank" href="https://www.instagram.com/roburna/#"  rel="noreferrer">
+                                < IoLogoInstagram size={28} className='text-black' />
+                            </a>
+                             <a target="_blank" href="https://www.tiktok.com/@roburna" rel="noreferrer">
+                                < FaTiktok size={28} className='text-black' />
+                            </a>
                             <a target="_blank" href='https://www.linkedin.com/company/roburna-official/about/' rel="noreferrer"><img src={linkedin} height='28px' /></a>
                         </div>
                     </Collapse>
@@ -57,7 +71,18 @@ export function Floatbar() {
                             <a target="_blank" href='https://t.me/Roburna' rel="noreferrer"><img src={telegram} height='28px' /></a>
                             <a target="_blank" href='https://discord.com/invite/d8qVn3ca2q' rel="noreferrer"><img src={discord} height='28px' /></a>
                             <a target="_blank" href='https://www.youtube.com/channel/UCO5Fn9KbNmWoB0hQC3xj2iQ' rel="noreferrer"><img src={youtube} height='28px' /></a>
-                            <a target="_blank" href='https://twitter.com/roburnaofficial' rel="noreferrer"><img src={twitter} height='28px' /></a>
+                            <a target="_blank" href='https://twitter.com/roburnaofficial' rel="noreferrer">
+                                < FaXTwitter size={28} className='text-black' />
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=61550291123573" rel="noreferrer">
+                                < RiFacebookFill  size={28} className='text-black' />
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/roburna/#"  rel="noreferrer">
+                                < IoLogoInstagram size={28} className='text-black' />
+                            </a>
+                            <a target="_blank" href="https://www.tiktok.com/@roburna" rel="noreferrer">
+                                < FaTiktok size={28} className='text-black' />
+                            </a>
                             <a target="_blank" href='https://www.linkedin.com/company/roburna-official/about/' rel="noreferrer"><img src={linkedin} height='28px' /></a>
                         </div>
                     </Collapse>
@@ -67,4 +92,3 @@ export function Floatbar() {
         </div>
     );
 }
-

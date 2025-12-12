@@ -233,7 +233,7 @@ export function Blockchain() {
                     <span className="flex flex-col  lg:mt-10 w-full text-center ">
                       <h2>{phase.title}</h2>
                       <div
-                        className="text-[12px] xl:text-[20px]"
+                        className="text-[12px] xl:text-[15px]"
                         dangerouslySetInnerHTML={{ __html: phase.content }}
                       />
                       <h5
@@ -275,7 +275,7 @@ export function Blockchain() {
                     <img src={flinkedin} width="54px" height="54px" />
                   </a>
                   <a
-                    href="https://twitter.com/Lars_Roburna"
+                    href="https://x.com/LarsFabri"
                     target="_blank"
                     className="text-success"
                   >

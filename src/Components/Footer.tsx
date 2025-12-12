@@ -16,6 +16,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 
+
 function Footer() {
   const [latestBlog, setLatestBlog] = useState<Blog>();
   const [userEmail, setUserEmail] = useState<any>();
@@ -170,38 +171,45 @@ function Footer() {
               target="_blank"
               style={{ color: "black" }}
             >
-              <FaTelegramPlane size={30} />
+              <FaTelegramPlane  size={30} />
+            </a>
+             <a
+              href="https://x.com/roburnaofficial"
+              target="_blank"
+              style={{ color: "black" }}
+            >
+              <FaXTwitter size={30} />
             </a>
             <a
-              href="https://discord.gg/roburna"
+              href="https://discord.com/invite/roburna"
               target="_blank"
               style={{ color: "black" }}
             >
               <FaDiscord size={30} />
             </a>
             <a
-              href="https://www.facebook.com/roburna"
+              href="https://www.facebook.com/profile.php?id=61550291123573"
               target="_blank"
               style={{ color: "black" }}
             >
               <FaFacebookF size={30} />
             </a>
             <a
-              href="https://www.instagram.com/roburna"
+              href="https://www.instagram.com/roburna/#"
               target="_blank"
               style={{ color: "black" }}
             >
               <FaInstagram size={30} />
             </a>
             <a
-              href="https://www.youtube.com/channel/UCVv6mQ8Zw3sQYfJ3hG5mU7w"
+              href="https://www.youtube.com/@RoburnaBlockchain"
               target="_blank"
               style={{ color: "black" }}
             >
               <FaYoutube size={30} />
             </a>
             <a
-              href="https://www.linkedin.com/company/roburna"
+              href="https://www.linkedin.com/company/roburna-official/posts/?feedView=all"
               target="_blank"
               style={{ color: "black" }}
             >
@@ -263,7 +271,7 @@ function Footer() {
         </form>
       </div>
       <div className="copyright">
-        © 2022 All Right Reserved. Roburna is a registered trademark of ROBURNA
+        © 2025 All Right Reserved. Roburna is a registered trademark of ROBURNA
         LABS.
         <span>
           <NavLink to="/terms-and-conditions" className="gradient-color">

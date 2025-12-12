@@ -249,6 +249,10 @@ footer p {
     position: absolute;
     right: 3%;
     bottom: 15%;
+     left: 50%;                    
+    transform: translateX(-50%); 
+    align-items: center;
+        text-align: center;
 }
 
 .alt-banner {
@@ -1712,4 +1716,9 @@ footer p {
     background: url(./Assets/images/mob-slider-bg.png);
     background-size: 100% 100%;
     }
+}
+
+
+#navigation .nav-link {
+  font-size: 18px !important;
 }
