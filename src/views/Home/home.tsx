@@ -68,60 +68,64 @@ export function Home() {
       <section className="feature-slider-sec-wrap">
         <div className="feature-slider-sec">
           <div className="feature-slider-wrap">
-            <Carousel
-              responsive={responsive}
-              infinite
-              autoPlaySpeed={3000}
-              arrows={true}
+        <Carousel
+  responsive={responsive}
+  infinite={true}
+  autoPlay={true}
+  autoPlaySpeed={5000}
+  arrows={true}
+  pauseOnHover={false}
+  shouldResetAutoplay={false}
+  swipeable={true}
+  draggable={true}
+>
+  {!!features.length &&
+    features.map((feature: any, index: number) => {
+      return (
+        <div className="feature-slider-item-wrap" key={index}>
+          <div className="feature-slider-item">
+            <h6>FEATURES</h6>
+            <img className="feature-icon" src={grleaf} alt="" />
+            <h3 className="px-md-5">{feature.title}</h3>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: feature.description,
+              }}
+            />
+            <NavLink
+              to={`/${feature.link}`}
+              className="--btn-1 "
+              style={{ zIndex: 1 }}
             >
-              {!!features.length &&
-                features.map((feature: any, index: number) => {
-                  return (
-                    <div className="feature-slider-item-wrap" key={index}>
-                      <div className="feature-slider-item">
-                        <h6>FEATURES</h6>
-                        <img className="feature-icon" src={grleaf} alt="" />
-                        <h3 className="px-md-5">{feature.title}</h3>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: feature.description,
-                          }}
-                        />
-
-                        <NavLink
-                          to={`/${feature.link}`}
-                          className="--btn-1 "
-                          style={{ zIndex: 1 }}
-                        >
-                          LEARN MORE
-                        </NavLink>
-                        {index === 0 ? (
-                          <b className="feature-slide-btn slide-btn-left gradient-color">
-                            {" "}
-                            {"<"} {features[features.length - 1].title}{" "}
-                          </b>
-                        ) : (
-                          <b className="feature-slide-btn slide-btn-left gradient-color">
-                            {" "}
-                            {"<"} {features[index - 1].title}{" "}
-                          </b>
-                        )}
-                        {features.length === index + 1 ? (
-                          <b className="feature-slide-btn slide-btn-right gradient-color">
-                            {" "}
-                            {features[0].title} {">"}
-                          </b>
-                        ) : (
-                          <b className="feature-slide-btn slide-btn-right gradient-color">
-                            {" "}
-                            {features[index + 1].title} {">"}{" "}
-                          </b>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-            </Carousel>
+              LEARN MORE
+            </NavLink>
+            {index === 0 ? (
+              <b className="feature-slide-btn slide-btn-left gradient-color">
+                {" "}
+                {"<"} {features[features.length - 1].title}{" "}
+              </b>
+            ) : (
+              <b className="feature-slide-btn slide-btn-left gradient-color">
+                {" "}
+                {"<"} {features[index - 1].title}{" "}
+              </b>
+            )}
+            {features.length === index + 1 ? (
+              <b className="feature-slide-btn slide-btn-right gradient-color">
+                {" "}
+                {features[0].title} {">"}
+              </b>
+            ) : (
+              <b className="feature-slide-btn slide-btn-right gradient-color">
+                {" "}
+                {features[index + 1].title} {">"}{" "}
+              </b>
+            )}
+          </div>
+        </div>
+      );
+    })}
+</Carousel>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ function Header() {
   };
  
   return (
-    <header className='d-flex align-items-center w-100'>
+    <header className='d-flex align-items-center w-100 '>
       
       <BootstrapNavbar variant="light" id="navigation" className="py-3 px-2 px-sm-4" expand="lg">
 
@@ -29,7 +29,7 @@ function Header() {
         <BootstrapNavbar.Collapse color="black" className="mobile-collapse-hide pt-4 pt-lg-0 " id="menuShow">
 
 
-          <Nav className="d-flex align-items-lg-center">
+          <Nav className="d-flex align-items-lg-center ]">
 
             <NavLink to="/" onClick={hideMenu} className={({ isActive }) => `nav-item nav-link ${isActive ? 'item' : ''} mb-1 mb-lg-0`}>
               Home
@@ -80,6 +80,10 @@ function Header() {
             <a 
               onClick={hideMenu}
             href='https://rbascan.com/' target='_blank' className='nav-item nav-link mb-1 mb-lg-0'>RBASCAN</a>
+
+              <a 
+              onClick={hideMenu}
+            href='https://rbascan.com/' target='_blank' className='nav-item nav-link mb-1 mb-lg-0'>VALIDATOR SYSTEM</a>
            
         
           </Nav>

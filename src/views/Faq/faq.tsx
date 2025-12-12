@@ -7,7 +7,7 @@ import { useFAQs } from "utils/hooks";
 export function Faq() {
   const FAQs = useFAQs();
   return (
-    <section className="faq-sec">
+    <section className="faq-sec mt-5">
       <h1 className="special-heading faq1">
         <span>ROBURNA</span> FAQ
       </h1>
